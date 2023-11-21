@@ -42,7 +42,7 @@ const FormContact = () => {
     if (identContactName) {
       return toast.info(`is already in contacts`, 'ok');
     }
-    console.log(name, number);
+    
     dispatch(addContact(finalContact));
     resetForm();
   };
