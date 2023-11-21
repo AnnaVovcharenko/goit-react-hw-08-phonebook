@@ -4,12 +4,12 @@ import {  useSelector } from 'react-redux';
 import Loading  from "../../components/Loading/Loading";
 import { Error } from "../EMesseage/EMesseage";
 // import { getContacts} from "../../redux/selectors";
-import { selectVisibleContacts, selectError, selectIsLoading } from "../../redux/selectors";
+import { selectVisibleContacts, selectError, selectLoading } from "../../redux/contacts/contSelectors";
 
 const ContactList = () => {
   // const contacts = useSelector(getContacts);
   const contacts = useSelector(selectVisibleContacts);
-  const isLoading = useSelector(selectIsLoading); 
+  const isLoading = useSelector(selectLoading); 
   const error = useSelector(selectError);
  
   return (

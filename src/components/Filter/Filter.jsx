@@ -1,6 +1,6 @@
 import { Div, Input } from './Filter.styled';
-import { selectFilter } from '../../redux/selectors';
-import { changeFilter } from '../../redux/filterSlice';
+import { selectFilter } from '../../redux/filter/filterSelector';
+import { changeFilter } from '../../redux/filter/filterSlice';
 import { useSelector, useDispatch } from 'react-redux';
 // import { nanoid } from 'nanoid';
 
